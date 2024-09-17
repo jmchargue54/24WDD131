@@ -1,0 +1,20 @@
+/* selector {
+    property: value;
+} */
+
+body {
+    font-size: 18px;
+    margin: 0;
+}
+h1 {
+    color: #738b89;
+}
+main {
+    background-color: #87a5a3;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Lora";
+    font-size: 18px;
+}

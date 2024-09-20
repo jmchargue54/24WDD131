@@ -1,0 +1,44 @@
+.content {
+    max-width: 500px;
+    line-height: 1.5;
+}
+body {
+    font-family: 'Times New Roman';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 40px;
+    border: 1px solid;
+}
+header {
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 1px;
+}
+h2 {
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    color: #006EB6;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 40px;
+}  
+main p {
+    margin-bottom: 20px;
+} 
+li {
+    margin-bottom: 15px;
+}
+.list {
+    margin-bottom: 40px;
+}
+.logo{
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}

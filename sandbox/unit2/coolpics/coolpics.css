@@ -9,25 +9,125 @@
 --secondary-font: "Mooli", san-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
 body {
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 227, 227);
+}
+.viewer {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.viewer img{
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    grid-row: 2;
+}
+.close-viewer {
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    grid-row: 1;
 }
 header {
     font-family: var(--secondary-font);
     background-color: var(--primary-color);
+    text-align: center;
     color: white;
+    margin: 0;
+}
+h1 {
+    font-size: 60px;
+    margin: 0 30px 20px 30px;
+    padding-top: 20px;
+}
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: var(--primary-font);
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+.menu a{
+    font-family: var(--primary-font);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 main h2 {
     font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 30px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.gallery img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border: 8px solid white;
+    box-shadow: 6px 6px 5px rgb(68, 68, 68);
 }
 footer {
     font-family: var(--secondary-font);
     background-color: var(--primary-color);
     color: white;
+    text-align: left;
+    padding: 0 0 0 5px;
+    flex-shrink: 0;
+    font-size: 18px;
 }
-img {
-    max-width: 100%;
-    object-fit: cover;
-    height: 250px;
-    width: 250px;
+
+@media (min-width: 700px) {
+    .viewer img {
+        max-width: 80%;
+    }
+}
+@media (min-width: 1000px) {
+    button {
+        display: none;
+    }
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu a {
+        margin-right: 25px;
+    }
+    .viewer {
+        padding: 60px;
+    }
+    .viewer img {
+        margin: 20px;
+        max-width: 60%;
+        margin: auto;
+    }
 }

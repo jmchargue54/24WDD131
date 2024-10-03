@@ -59,14 +59,16 @@ main {
     font-family: var(--body-font);
     color: var(--dark-color);
     text-align: right;
-    margin-top: 25px;
+    margin-top: 42px;
+    grid-column: 1;
 }
 .content {
     border-left: 2px solid var(--gold-color);
     margin-left: 20px;
     padding-left: 20px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 15px;
+    grid-column: 2;
 }
 .content h1 {
     font-family: var(--headline-font);
@@ -86,6 +88,8 @@ main {
     color: var(--dark-color);
     border: 2px solid var(--gold-color);
     margin: 10px;
+    margin-top: 25px;
     padding-left: 10px;
+    grid-column: 3;
+    grid-row: 1/4;
 }
-

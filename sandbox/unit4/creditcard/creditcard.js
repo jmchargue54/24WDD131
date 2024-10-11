@@ -16,9 +16,7 @@ function submitHandler(event) {
 		errorMsg += 'Card number is not a valid number\n';
 	} else if (!isCardNumberValid(this.cardnum.value)) {
 		errorMsg += 'Card number is not a valid card number\n';
-	} else {
-        errorMsg += 'Submitted Successfully!'
-    }
+	}
 	if (errorMsg !== '') {
 		displayError(errorMsg);
 		return false;
@@ -38,8 +36,6 @@ function checkExp(event) {
         errorMsg += 'Invalid expiration year\n';
     } else if (expYY === currentYear && expMM < currentMonth) {
         errorMsg += 'Invalid expiration month\n';
-    } else {
-        errorMsg += 'Submitted Successfully!'
     }
     if (errorMsg !== '') {
 		displayError(errorMsg);

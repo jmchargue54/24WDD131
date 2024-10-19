@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Amatic SC";
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+.titleContainer h1 {
+    font-size: 70px;
+    color: var(--text-dark);
+}
+.titleContainer img {
+    margin-top: 20px;
+    height: 100px;
+}
+.search_container {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+#search {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    margin: 0;
+}
+#searchImg {
+    height: 30px;
+    padding: 2px;
+}
+header {
+    border-bottom: 1px solid gray;
+}
+.recipe {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 25px;
+}
+#recipeImg {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.recipe h2, h1{
+    font-family: var(--secondary-font);
+}
+.recipe h2{
+    font-size: 35px;
+    color: var(--primary-color);
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.recipe h3 {
+    font-size: 30px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.tags p {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 5px;
+    color: var(--text-dark);
+}
+#description {
+    display: none;
+}
+footer {
+    margin-top: 60px;
+    text-align: center;
+}
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+footer img {
+    height: 60px;
+}
+@media (min-width:600px) {
+    #recipeImg {
+        width: 35%;
+        min-width: 190px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .recipe {
+        display: flex;
+        text-align: left;
+        max-width: 960px;
+        margin-left: 0;
+        margin-right: 0;
+        justify-self: center;
+    }
+    #description {
+        display: flex;
+        font-family: var(--primary-color);
+        font-size: 18px;
+        color: var(--text-dark);
+    }
+    .tags {
+        padding: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: bottom;
+        margin-bottom: 30px;
+    }
+}

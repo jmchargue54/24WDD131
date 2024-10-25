@@ -78,7 +78,6 @@ nav {
 }
 #smile-img{
     height: 100%;
-;
 }
 #header{
     grid-column: 2/4;
@@ -146,12 +145,19 @@ nav {
     color: #500303;
     font-weight: bold;
 }
-                                                /* welcome grid */
+/* welcome grid */
 h2{
     font-family: "Mulish", Helvetica, sans-serif;
 }
 h3{
     font-family: "Monserrat";
+}
+.welcome-grid {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .welcome{
     grid-column: 1/3;
@@ -163,18 +169,19 @@ h3{
     text-align: center;
     margin-top: 60px;
 }
-.welcome h3{
+.welcome p{
+    margin: auto;
     color: #500303;
-    border: 3px solid #500303;
+    /* border: 3px solid #500303; */
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
-    text-align: center;
-    margin: 45px;
+    max-width: 70ch;
+    font-family: "Monserrat";
 }
 .location{
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2/4;
     margin: 30px;
 }    
 .location img{   
@@ -182,7 +189,7 @@ h3{
 }
 .hours{
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 2/4;
     margin: 30px;
 }
 .hours img{

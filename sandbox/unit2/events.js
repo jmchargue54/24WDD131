@@ -9,7 +9,7 @@ function taskTemplate(task) {
      <span data-function="complete">✅</span>
    </div>
  </li>`;
-}
+} 
 
 function renderTasks(tasks) {
   // get the list element from the DOM
@@ -27,7 +27,7 @@ function newTask() {
   const newT = { detail: todoElement.value, completed: false};
   tasks.push(newT);
   // clear input field
-todoElement.value = ("");
+  todoElement.value = ("");
   // render out the list
   renderTasks(tasks);
 }

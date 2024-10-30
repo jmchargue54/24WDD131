@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Division Street Dental | Home</title>
-    <link rel="stylesheet" href="styles/dsdtest.css">
+    <link rel="stylesheet" href="dsd.css">
+    <script src="dsd.js" defer></script>
 </head>
 <body>
-    <div id="content">
-        <nav>
-        <a id="logo_link" href="index.html">
-        <img class="logo" src="pictures/dsd-logo.png" alt="dsd logo">
-        </a>
+    <header>
+        <div class="header-pics">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="pictures/dsd-logo.png" alt="dsd logo">
+            </a>
+            <img id="menu-icon" src="pictures/menu-icon.png" alt="menu-icon">
+        </div>
         <!-- <nav> -->
         <div id="nav">  
             <a href="index.html">Welcome</a>
@@ -19,26 +22,12 @@
             <a href="reviews.html">Patient Reviews</a>
             <a href="contactus.html">Make an Appointment</a>
         </div> 
-        <div id="social">
-            <section class="info">
-                <h2>524 South Division Street, Moses Lake, WA, 98837, USA</h2>
-                <h3>(509)765-8010</h3>
-            </section>
-            <a href="https://www.facebook.com/divisionstreetdental" target="_blank">
-                <img class="fb" src="pictures/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img class="tw" src="pictures/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://www.instagram.com/explore/locations/300390743394260/division-street-dental-dr-ron-mchargue/" target="_blank">
-                <img class="in" src="pictures/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-        </nav>
-        <div id="header">
-            <div id="headphone-img">
-                <img id="phone-img" src="pictures/phone.jpg" alt="phone">
-            </div> 
+        <!-- <img id="fade-img" src="pictures/fade.png" alt="fade"> -->
+        <div id="mainheader">
+            <img id="main-img" src="pictures/office.jpg" alt="office">
+            <h2 class="header-title">Division Street Dental</h2>
+            <h2 id="dr">Dr. Ron McHargue</h2>
+            <h2 id="care">Quality, compassionate care</h2>
             <div id="header-icons">
                 <img id="icon1" src="pictures/smlcrowns.png" alt="icon1">
                 <img id="icon2" src="pictures/smlimplants.png" alt="icon2">
@@ -46,22 +35,10 @@
                 <img id="icon4" src="pictures/smlcleanings.png" alt="icon4">
                 <img id="icon5" src="pictures/smlmore.png" alt="icon5">
             </div>
-            <div id="header-msg">
-                <h2 class="header-title">Division Street Dental</h2>
-            </div>
-            <div id="dr">
-                <h3>Dr. Ron McHargue</h3>
-            </div>    
-            <div id="care" >
-                <h4>Quality, compassionate care</h4>
-            </div>    
-            <div id="button-box">
-                 <a class='book' href="contactus.html">Make an Appointment</a>
-            </div>
-            <div id="fade-img">
-                <img class="fade" src="pictures/fade.png" alt="fade">
-            </div>
+            <button id="button-box">Make an Appointment</button>
         </div>
+    </header>
+    <main>
         <div id="feedback"></div>
         <form action="#" method="post">
             <ul>
@@ -82,14 +59,27 @@
               </li>
             </ul>
           </form>
-        <footer>
-            <h2>Division Street Dental</h2>
-            <h3>Dr. Ron McHargue</h3>
-            <p>Division Street Dental &copy; 2023 - Jenna McHargue</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="reviews.html">Leave a Review</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
-        </footer>
+    </main>
+    <footer>
+        <h2 id="title">Division Street Dental</h2>
+        <h3 id="name">Dr. Ron McHargue</h3>
+        <h3 id="phone">(509)765-8010</h3>
+        <h2 id="address">524 South Division Street, Moses Lake, WA, 98837, USA</h2>
+        <section class="info">
+            <p>Division Street Dental &copy; 2024 - Jenna McHargue</p>
+            <div id="social">
+                <button href="https://www.facebook.com/divisionstreetdental" target="_blank">
+                    <img class="fb" src="pictures/facebook.png" alt="fb icon">
+                </button>
+                <button href="https://twitter.com" target="_blank">
+                    <img class="tw" src="pictures/twitter.png" alt="twitter icon">
+                </button>
+                <button href="https://www.instagram.com/explore/locations/300390743394260/division-street-dental-dr-ron-mchargue/" target="_blank">
+                    <img class="in" src="pictures/instagram.png" alt="instagram icon">
+                </button>
+            </div>
+        </section>
+    </footer>
     </div>
     <script>
         // get the feedback div element so we can do something with it.

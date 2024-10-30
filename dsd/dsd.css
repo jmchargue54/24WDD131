@@ -21,11 +21,24 @@ header{
 #header-icons img{
     width: 17%;
 }
+.header-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo{
     width: 100px;
-    padding: 11px;
+    padding: 10px;
 }
     /* nav */
+.hide {
+    display: none;
+}
+#menu-icon {
+    width: 50px;
+    padding-right: 10px;
+}
 #nav a{
     display: flex;
     font-size: 1.6em;
@@ -40,7 +53,13 @@ header{
     background-color: var(--some-blue);
     color: var(--dsd-red);
 }
-/* header */
+@media (min-width: 1000px) {
+    #menu-icon {
+        display: none;
+    }
+    
+}  
+    /* header */
 #header-img {
     width: 100%;
 }
@@ -177,7 +196,6 @@ footer button {
     width: 90%;
     margin: 0 auto;
     max-width: 700px;
-
 }
 .location h2,
 .location h3 {
@@ -208,7 +226,20 @@ footer button {
     max-width: 700px;
     display: block;
 }
-
+@media (min-width: 700px) {
+    .mapHours {
+        display: flex;
+    }
+    .location {
+        justify-self: flex-start;
+    }
+    .hours {
+        flex-wrap: wrap;
+        justify-self: flex-end;
+        max-width: 640px;
+    }
+    
+}
 
 /* Meet page */
 .meet {
@@ -358,8 +389,8 @@ footer button {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--nav-blue);
-    color: var(--near-white);
+    background-color: var(--some-blue);
+    color: var(--dsd-red);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -375,7 +406,7 @@ footer button {
 
 .banner-content p {
     margin: 0;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 .close-banner {
